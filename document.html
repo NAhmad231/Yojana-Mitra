@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yojna Mitra - Documents</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #28a745;
+      color: white;
+      padding: 10px 20px;
+    }
+
+    .navbar img {
+      height: 40px;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar ul li {
+      margin: 0 15px;
+    }
+
+    .navbar ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .navbar .search-bar {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar .search-bar input {
+      padding: 5px 10px;
+      border-radius: 15px;
+      border: none;
+      outline: none;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 200px;
+      background: #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 20px;
+    }
+
+    .sidebar h3 {
+      text-align: center;
+      color: #28a745;
+      margin-bottom: 30px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+
+    .sidebar ul li a {
+      text-decoration: none;
+      color: black;
+      display: flex;
+      align-items: center;
+    }
+
+    .sidebar ul li img {
+      height: 20px;
+      margin-right: 10px;
+    }
+
+    /* Main Content */
+    .main {
+      margin-left: 220px;
+      padding: 20px;
+    }
+
+    .main h2 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .banner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #f5f5f5;
+      padding: 15px 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+
+    .banner img {
+      height: 100px;
+    }
+
+    .documents, .categories {
+      margin-bottom: 30px;
+    }
+
+    .documents h3, .categories h3 {
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      width: 120px;
+      height: 120px;
+      background: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .card img {
+      height: 40px;
+      margin-bottom: 10px;
+    }
+
+    .card span {
+      font-size: 14px;
+    }
+
+    /* Footer */
+    .footer {
+      background: #d4f5d4;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .footer div {
+      font-size: 14px;
+    }
+
+    .footer .social-icons img {
+      height: 30px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <img src="https://via.placeholder.com/100x50.png?text=YojnaMitra" alt="Logo">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="search-bar">
+      <input type="text" placeholder="Search for a Scheme...">
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <h3>M Baqir</h3>
+    <ul>
+      <li><a href="#"><img src="https://via.placeholder.com/20" alt=""> Dashboard</a></li>
+      <li><a href="#"><img src="https://via.placeholder.com/20" alt=""> Schemes</a></li>
+      <li><a href="#"><img src="https://via.placeholder.com/20" alt=""> Documents</a></li>
+      <li><a href="#"><img src="https://via.placeholder.com/20" alt=""> History</a></li>
+      <li><a href="#"><img src="https://via.placeholder.com/20" alt=""> Tools</a></li>
+      <li><a href="#"><img src="https://via.placeholder.com/20" alt=""> Inbox</a></li>
+      <li><a href="#"><img src="https://via.placeholder.com/20" alt=""> Setting</a></li>
+      <li><a href="#"><img src="https://via.placeholder.com/20" alt=""> Logout</a></li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <h2>Documents</h2>
+    <div class="banner">
+      <span>Securely access your documents anytime, anywhere on DigiLocker</span>
+      <img src="https://via.placeholder.com/150x100.png?text=Banner" alt="Banner">
+    </div>
+
+    <div class="documents">
+      <h3>My Documents</h3>
+      <div class="grid">
+        <div class="card">
+          <img src="https://via.placeholder.com/40" alt="">
+          <span>Aadhaar Card</span>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/40" alt="">
+          <span>Driving License</span>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/40" alt="">
+          <span>PAN Card</span>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/40" alt="">
+          <span>Covid Certificate</span>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/40" alt="">
+          <span>Class XII Marksheet</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="categories">
+      <h3>Categories</h3>
+      <div class="grid">
+        <div class="card">
+          <img src="https://via.placeholder.com/40" alt="">
+          <span>ID</span>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/40" alt="">
+          <span>Insurance</span>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/40" alt="">
+          <span>License</span>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/40" alt="">
+          <span>Government Certificate</span>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/40" alt="">
+          <span>Education</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div>
+      <strong>Our team</strong><br>
+      About us, Team, What we do, Contact
+    </div>
+    <div>
+      <strong>More</strong><br>
+      Schemes, Events, Donate, Blog
+    </div>
+    <div>
+      <strong>Connect</strong><br>
+      Facebook, Instagram, Twitter, LinkedIn
+    </div>
+    <div class="social-icons">
+      <img src="https://via.placeholder.com/30" alt="FB">
+      <img src="https://via.placeholder.com/30" alt="IG">
+      <img src="https://via.placeholder.com/30" alt="TW">
+      <img src="https://via.placeholder.com/30" alt="LI">
+    </div>
+  </div>
+</body>
+</html>
